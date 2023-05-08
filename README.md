@@ -1,0 +1,1 @@
+This website are about a fake animation studio called Animatrix Studios, just for practice a HTML & CSS at the Tec. Web classes. Made by Me & Matheus Nunes, please enjoy!
