@@ -16,13 +16,13 @@
     <header>
         <figure class="logo">
             <img id="animatrix-logo" src="images/logo.png" alt="Animatrix Studios Logo">
+            <div id="company-info">
+                <h1><img id="company-name" src="images/nome.png" alt="Animatrix Studios"></h1>
+                <span id="company-description">Tornando sua vida mais animada</span>
+            </div>
         </figure>
-        <div id="animatrix-infos" class="company-info">
-            <h1><img id="animatrix-name-logo" class="company-name" src="images/nome.png" alt="Animatrix Studios"></h1>
-            <span id="animatrix-description"class="company-description">Tornando sua vida mais animada</span>
-        </div>
         <div id="header-options" class="options">
-            <div class="languages">
+            <div id="languages">
                 <a href="">PT</a>
                 <span>|</span>
                 <a href="">EN</a>
@@ -31,21 +31,21 @@
                 <span>|</span>
                 <a href="">FR</a>
             </div>
-            <div class="opt">
+            <div id="opt">
                 <a href="#works">Nossos Trabalhos</a>
                 <span>|</span>
-                <a href="">Edraw Max</a>
+                <a href="#forms-news">Formulário</a>
                 <span>|</span>
-                <a href="">Edraw Mind Map</a>
+                <a href="#footer">Suporte</a>
             </div>
         </div>     
     </header>
     <nav id="main-nav-bar">
         <a href="">HOME</a>
-        <a href="#story-headline">MANGAS DA SEMANA</a>
+        <a href="#week-manga-headline">MANGAS DA SEMANA</a>
         <a href="#products">PRODUTOS</a>
         <a href="#news">NOVIDADES</a>
-        <a href="#footer">SUPORTE</a>
+        <a href="#last-reviews">AVALIAÇÕES</a>
         <a href="#about">SOBRE</a>
         <input id="search-bar" type="search" name="search-bar" placeholder="Search">
     </nav>
@@ -54,22 +54,22 @@
     </figure>
     <div class="container">
         <section id="main-content">
-            <div id="story-headline">
+            <div id="week-manga-headline">
                 <h2>Volume da Semana</h2>
-                <div class="story-headline-content">
+                <div class="week-manga-content">
                     <img src="images/one-piece-cap4.png" alt="">
-                    <div class="story-healine-text-description">
+                    <div class="week-manga-description">
                         <h3>One Piece Cap. 4</h3>
                         <p>Uma visão do passado de Luffy é mostrado e somos apresentados a seu herói, o homem que lhe deu o chapéu de palha, Shanks. Shanks e sua tripulação se recusa a brigar com um grupo de bandidos que estavam na cidade como o jovem Luffy é levado pelo líder dos bandidos e jogado na água, onde ele não pode nadar, devido à sua Akuma no Mi.
                         </p>
-                        <div class="story-headline-buttons">
+                        <div class="week-manga-buttons">
                             <button>LER MANGÁ</button>
                             <button>COMPRAR VOLUME</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="manga">
+            <div class="week-most-manga">
                 <h2>Mais Vistos da Semana</h2>
                 <div class="manga-images">
                     <figure class="manga-box">
@@ -97,7 +97,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="newsletter-user-reviews">
+                <div class="week-manga-user-reviews">
                     <h3>Review dos Usuários</h3>
                     <p>Os capítulos dessa última semana foram incríveis, mesmo alguns tendo atrasos consideráveis de publicação no final valeram a pena.Solo leveling estava num arco bem chato, mas nesse último capítulo a luta entre o Sung Jin-Woo e o Levi foi bem intensa e muito bem animada. Kimetsu vem desenvolvendo bem os personagens nos últimos volumes, já por outro lado Tokyo Revengers continuam bem frenético desde o começo, sempre tendo lutas e embates entre as gangues. One Piece, como sempre muito bem animado fico feliz do desenvolvimento do anime. 
                     </p>
@@ -105,7 +105,7 @@
             </div>
         </section>
         <aside>
-            <div class="social">
+            <div class="movie">
                 <h2>Filmes</h2>
                 <div class="movie-iframe">
                     <iframe width="300" height="220" src="https://www.youtube.com/embed/JvqcaQJgr-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -158,7 +158,7 @@
             <button>R$ 5.520,00</button>
         </div>
     </section>
-    <div class="forms-news">
+    <div id="forms-news" class="forms-news">
         <form class="forms" action="">
             <span>
                 Deseja receber novidades sobre o <b>mundo da animação</b> e <b>nossos projetos?</b>
@@ -175,11 +175,9 @@
                 <button id="submit-form-button" type="submit">DESEJO RECEBER NOVIDADES</button>
             </div>
         </form>
-        <figure>
-            <img src="images/dog.png" height="600px" width="250px" alt="">
-        </figure>
+        <img src="images/dog.png" height="600px" width="250px" alt="">
     </div>
-    <section class="last-reviews">
+    <section id="last-reviews" class="last-reviews">
         <h2>Ultimas Avaliações</h2>
         <div class="last-user-reviews">
             <div class="user-review">

@@ -27,22 +27,27 @@ header{
     flex-direction: row;
     justify-content: flex-start;
     align-items: space-evenly;
+    flex-wrap: wrap;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
 }
 #animatrix-logo{
     height: 100px;
-    width: auto
+    width: auto;
 }
-.company-info{
+#company-info{
+    margin: 0 20px;
     display: flex;
-    width: 50%;
     flex-direction: column;
     justify-content: space-evenly;
 }
-.company-name{
+#company-name{
     height: 60px;
     width: auto;
 }
-.company-description{
+#company-description{
     letter-spacing: 0.1em;
     font-weight: 700;
 }
@@ -58,13 +63,15 @@ header{
     font-weight: 600;
 }
 #main-nav-bar{
+    padding: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     height: 3em;
     background-color: #ff4d6d;
-    border-radius: 25px;
+    border-radius: 45px;
 }
 #main-nav-bar a{
     color: #fff0f3;
@@ -86,12 +93,13 @@ header{
 }
 #home-image{
     height: auto;
-    width: 80%;
+    width: 100%;
 }
 .container{
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .container h2{
     margin-bottom: 20px;
@@ -99,44 +107,52 @@ header{
 #main-content{
     margin: 0 40px;
     width: 60%;
+    flex-grow: 1;
 }
 aside{
     height: auto;
-    width: 30%;
+    width: auto;
     background-color: #ffccd5;
+    flex-grow: 1;
 }
 aside h2{
     padding: 0 20px;
     color: #fff0f3;
     background-color: #a4133c;
 }
-#story-headline{
+#week-manga-headline{
+    margin-bottom: 30px;
     height: auto;
     display: flex;
     flex-direction: column;
 }
-.story-headline-content{
+.week-manga-content{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
-.story-headline-content img{
-    width: 300px;
+.week-manga-content img{
     height: 300px;
+    min-width: 280px;
     margin: 0 20px;
 }
-.story-healine-text-description p{
+.week-manga-description{
+    width: 45%;
+    flex-grow: 1;
+}
+.week-manga-description p{
     margin: 0;
 }
-.story-headline-buttons{
+.week-manga-buttons{
     margin: 20px 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.story-headline-buttons button, .movie-iframe button{
+.week-manga-buttons button, .movie-iframe button{
     margin: 0 10px;
     padding: 10px 20px;
     border: none;
@@ -149,7 +165,7 @@ aside h2{
 .movie-iframe button{
     margin: 20px 10px;
 }
-.story-headline-buttons button:hover{
+.week-manga-buttons button:hover{
     box-shadow: 2px 2px 10px #5c5c5c;
 }
 .manga-images{
@@ -157,15 +173,18 @@ aside h2{
     overflow: hidden;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .manga-box{
-    margin: 0;
-    width: 20%;
+    margin: 10px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 20%;
+    min-width: 140px;
 }
 .manga-image{
     height: 180px;
@@ -175,10 +194,11 @@ aside h2{
     margin-top: 10px;
     text-align: center;
 }
-.newsletter-user-reviews{
-    margin: 0 px;
+.week-manga-user-reviews{
+    margin: 0;
 }
 .movie-iframe{
+    margin: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -197,18 +217,21 @@ aside nav li{
 }
 aside nav ul{
     margin: 0;
+    margin-bottom: 80px;
 }
 aside nav li:hover{
     cursor: pointer;
     font-weight: bolder;
 }
 .products{
-    margin: 120px 0;
+    margin: 80px 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .products-box{
+    margin: 30px;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -233,7 +256,7 @@ aside nav li:hover{
 .products-box button{
     align-self: center;
     margin-top: auto;
-    width: 300px;
+    width: 90%;
     padding: 10px 20px;
     border: none;
     background-color: #ff4d6d;
@@ -243,42 +266,35 @@ aside nav li:hover{
     font-weight: 700;
 }
 .forms-news{
-    height: 700px;
-    margin: 0 30px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
+    width: 100%;
 }
 .forms{
-    max-width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50%;
 }
 .forms span{
     color: #ff758f;
     font-size: 40px;
-    padding: 20px 0 20px 40px;
 }
 .forms b{
     color: #ff4d6d;
 }
 .forms-news img{
-    height: 60%;
-    width: auto;
-}
-.forms-news figure{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: auto;
+    width: 40%;
 }
 .forms-inputs{
     margin: 20px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
-    width: 60%;
+    width: 80%;
 }
 .forms-inputs label{
     margin: 5px;
@@ -294,7 +310,7 @@ aside nav li:hover{
     padding: 10px 20px;
     background-color: #ffccd5;
     border-radius: 25px;
-    width: 87%;
+    width: 90%;
 }
 .forms-inputs input:focus{
     outline-color: #ff4d6d;
@@ -325,7 +341,7 @@ aside nav li:hover{
     margin-bottom: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
 }
 .last-reviews button{
@@ -340,17 +356,18 @@ aside nav li:hover{
     align-self: flex-end;
 }
 .user-review{
-    height: 300px;
+    height: auto;
     width: 400px;
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
     justify-content: space-around;
 }
 .user-icon{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin: 20px 20px;
+    margin: 20px;
 }
 .user-icon img{
     border: 3px solid #a4133c;
@@ -387,9 +404,11 @@ aside nav li:hover{
     margin: 35px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 #news{
     width: 60%;
+    flex-grow: 1;
 }
 #news hr{
     border: none;
@@ -402,6 +421,7 @@ aside nav li:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 30px 0;
 }
 .news-box:hover{
@@ -409,19 +429,23 @@ aside nav li:hover{
 }
 .news-image{
     width: 45%;
-    height: auto;
+    height: 250px;
+    min-width: 300px;
+    flex-grow: 1;
 }
 .news-text-box{
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 50%;
+    flex-grow: 1;
 }
 .news-text-box h3{
     margin: 0;
 }
 .filter{
-    margin: 0 3px;
+    margin: 3px;
     padding: 5px 10px;
     color: #fff0f3;
     font-size: 12px;
@@ -431,6 +455,8 @@ aside nav li:hover{
 }
 #about{
     width: 35%;
+    min-width: 460px;
+    flex-grow: 1;
 }
 #about-text{
     color: #ff4d6d;
@@ -469,14 +495,15 @@ aside nav li:hover{
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 .works-content figure{
     overflow: hidden;
 }
 .works-content img{
-    margin: 0;
+    margin: 5px;
     height: 700px;
     width: 400px;
     transition: 1.5s;
@@ -511,4 +538,196 @@ footer h3{
 #devs{
     margin: 10px 0;
     align-self: center;
+}
+@media screen and (max-width: 920px){
+    #main-nav-bar{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+        background-color: inherit;
+    }
+    #main-nav-bar a{
+        margin: 5px 0;
+        padding: 5px 0;
+        width: 100%;
+        color: #fff0f3;
+        background-color: #ff4d6d;
+        text-align: center;
+        border-radius: 25px;
+        font-weight: 900;
+    }
+    #main-nav-bar #search-bar{
+        margin: 5px 0;
+        width: 100%;
+        border: none;
+        background-color: #ffccd5;
+        border-radius: 15px;
+    }
+    #main-nav-bar #search-bar::placeholder{
+        color: #ff4d6d;
+        font-weight: 700;
+    }
+}
+@media screen and (max-width: 750px){
+    .forms-news img{
+        display: none;
+    }
+    .forms{
+        flex-grow: 1;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    h1, h2{
+        font-size: 32px;
+    }
+    header{
+        flex-direction: column;
+    }
+    .logo{
+        margin: 0;
+    }
+    #animatrix-logo{
+        height: 80px;
+    }
+    #company-name{
+        height: 40px;
+    }
+    #company-description{
+        letter-spacing: 0;
+    }
+    #header-options{
+        margin: 10px 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #opt, #languages{
+        margin: 5px 0;
+    }
+    #opt{
+        font-size: 13px;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #main-content, aside{
+        margin: 0;
+        width: 100%;
+    }
+    aside{
+        margin: 20px 0;
+        height: 700px;
+    }
+    #week-manga-headline{
+        width: 100%;
+    }
+    .week-manga-content{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .week-manga-content img{
+        margin: 0;
+    }
+    .week-manga-description{
+        width: 100%;
+    }
+    .manga-images{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .manga-box{
+        margin: 20px 0;
+        width: 100%;
+    }
+    .products{
+        margin: 40px 0;
+    }
+    .products-box{
+        margin: 20px 0;
+        padding: 30px 0;
+        width: 100%;
+    }
+    .products-box button{
+        width: 80%;
+    }
+    .forms-news{
+        margin: 0;
+        justify-content: center;
+    }
+    .forms{
+        width: 100%;
+    }
+    .forms span{
+        font-size: 24px;
+        padding: 0;
+    }
+    .forms-inputs{
+        margin: 20px 0;
+        justify-content: flex-start; 
+    }
+    .last-user-reviews{
+        flex-direction: column;
+    }
+    .user-review{
+        height: auto;
+        width: 100%;
+    }
+    .user-icon{
+        margin: 20px 10px;
+    }
+    .user-icon img{
+        width: 60px;
+        height: 60px;
+        border: 2px solid #a4133c;
+    }
+    .user-rate img{
+        height: 15px;
+        width: auto;
+    }
+    .date-review{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    #news-and-about{
+        flex-direction: column;
+    }
+    #news, #about{
+        width: 100%;
+        min-width: 100%;
+    }
+    .news-box{
+        flex-direction: column;
+    }
+    .news-image{
+        margin-bottom: 10px;
+        width: 100%;
+        height: 200px;
+    }
+    .news-text-box{
+        width: auto;
+    }
+    .works-content{
+        width: 100%;
+        flex-direction: column;
+    }
+    .works-content img{
+        width: 100%;
+    }
+    .center-content{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .center-image img{
+        width: 100%;
+        height: 220px;
+    }
+    footer{
+        font-size: 14px;
+    }
+    #devs{
+        font-size: 12px;
+    }
 }
