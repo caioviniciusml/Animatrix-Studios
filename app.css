@@ -1,0 +1,69 @@
+body{
+    margin: 20px 40px;
+}
+#animatrix-logo{
+    height: 100px;
+    width: auto;
+}
+#company-name{
+    height: 60px;
+    width: auto;
+}
+#home-image{
+    height: auto;
+    width: 100%;
+}
+.week-manga-content img{
+    height: 300px;
+    min-width: 280px;
+    margin: 0 20px;
+}
+.manga-image{
+    height: 180px;
+    width: 120px;
+}
+#forms-news img{
+    height: auto;
+    width: 80%;
+}
+.user-icon img{
+    border: 3px solid #a4133c;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+.user-rate img{
+    height: 25px;
+    width: auto;
+}
+
+.news-image{
+    width: 100%;
+    height: 250px;
+    min-width: 300px;
+    flex-grow: 1;
+}
+#user-icon{
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+}
+.social-icons img{
+    margin: 0 15px;
+    width: 50px;
+    height: auto;
+}
+.social-icons img:hover{
+    cursor: pointer;
+}
+#works-row img{
+    width: 100%;
+    height: 100%;
+    transition: 1.5s;
+}
+#works-row img:hover{
+    transform: scale(1.2);
+}
+.col-4{
+    overflow: hidden;
+}

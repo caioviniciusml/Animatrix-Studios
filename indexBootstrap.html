@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="app.css">
+  <title>ANIMATRIX COM BOOTSTRAP</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-1">
+        <figure class="logo">
+          <img id="animatrix-logo" src="images/logo.png" alt="Animatrix Studios Logo">
+        </figure>
+      </div>
+      <div class="col-8">
+        <div id="company-info">
+          <h1><img id="company-name" src="images/nome.png" alt="Animatrix Studios"></h1>
+          <span id="company-description">Tornando sua vida mais animada</span>
+        </div>
+      </div>
+      <div class="col-3 align-self-end">
+        <div id="languages">
+          <a href="">PT</a>
+          <span>|</span>
+          <a href="">EN</a>
+          <span>|</span>
+          <a href="">DE</a>
+          <span>|</span>
+          <a href="">FR</a>
+        </div>
+        <div id="opt">
+          <a href="#works">Nossos Trabalhos</a>
+          <span>|</span>
+          <a href="#forms-news">Formulário</a>
+          <span>|</span>
+          <a href="#footer">Suporte</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar rounded-pill navbar-expand-lg bg-body-tertiary bg-primary navbar-dark">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MANGAS DA SEMANA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">PRODUTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">NOVIDADES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">AVALIAÇÕES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">SOBRE</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <figure id="home-content">
+      <img id="home-image" src="images/jovens.png" alt="Home Image">
+    </figure>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3">
+        <h2>Volume da Semana</h2>
+        <div class="week-manga-content">
+          <img src="images/one-piece-cap4.png" alt="">
+        </div>
+      </div>
+      <div class="col-5 align-self-center">
+        <div class="week-manga-description">
+          <h3>One Piece Cap. 4</h3>
+          <p>Uma visão do passado de Luffy é mostrado e somos apresentados a seu herói, o homem que lhe deu o chapéu
+            de palha, Shanks. Shanks e sua tripulação se recusa a brigar com um grupo de bandidos que estavam na
+            cidade como o jovem Luffy é levado pelo líder dos bandidos e jogado na água, onde ele não pode nadar,
+            devido à sua Akuma no Mi.
+          </p>
+          <div class="week-manga-buttons ">
+            <button>LER MANGÁ</button>
+            <button>COMPRAR VOLUME</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="movie">
+          <h2>Filmes</h2>
+          <div class="movie-iframe">
+            <iframe width="300" height="220" src="https://www.youtube.com/embed/JvqcaQJgr-A"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <button>COMPARTILHAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <h2>Mais Vistos da Semana</h2>
+        <figure class="manga-box">
+          <img class="manga-image" src="images/solo-leveling-manga.jpg" alt="">
+          <figcaption>
+            Solo Leveling by Chu-Gong
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-2 align-self-end">
+        <figure class="manga-box">
+          <img class="manga-image" src="images/kimetsu-manga.jpg" alt="">
+          <figcaption>
+            Kimetsu no Yaiba by Koyoharu Gotōge
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-2 align-self-end">
+        <figure class="manga-box">
+          <img class="manga-image" src="images/tokyo-revengers-manga.jpg" alt="">
+          <figcaption>
+            Tokyo Revengers by Ken Wakui
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-2 align-self-end">
+        <figure class="manga-box">
+          <img class="manga-image" src="images/one-piece-manga.jpg" alt="">
+          <figcaption>
+            One Piece by Eiichiro Oda
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-4">
+        <nav id="works-nav" class="navigate">
+          <h2>Trabalhos</h2>
+          <ul>
+            <li>ICONES</li>
+            <li>PERSONAGENS</li>
+            <li>GIF</li>
+            <li>CURTA ANIMADO</li>
+            <li>CURTA METRAGENS</li>
+            <li>FILMES</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8">
+        <div class="week-manga-user-reviews">
+          <h3>Review dos Usuários</h3>
+          <p>Os capítulos dessa última semana foram incríveis, mesmo alguns tendo atrasos consideráveis de publicação no
+            final valeram a pena.Solo leveling estava num arco bem chato, mas nesse último capítulo a luta entre o Sung
+            Jin-Woo e o Levi foi bem intensa e muito bem animada. Kimetsu vem desenvolvendo bem os personagens nos
+            últimos volumes, já por outro lado Tokyo Revengers continuam bem frenético desde o começo, sempre tendo
+            lutas e embates entre as gangues. One Piece, como sempre muito bem animado fico feliz do desenvolvimento do
+            anime.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-around">
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h2 class="card-title">30 SEGUNDOS</h2>
+            <ul>
+              <li>Roteiro para vídeo Animado</li>
+              <li>Trilha sonora com 100% de direitos de usar e comercializar </li>
+              <li>Vídeo em Animação 2D</li>
+            </ul>
+            <button class="btn btn-primary">R$ 2.880,00</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h2 class="card-title">60 SEGUNDOS</h2>
+            <ul>
+              <li>Roteiro para vídeo Animado</li>
+              <li>Storyboard do vídeo</li>
+              <li>Trilha sonora com 100% de direitos de usar e comercializar </li>
+              <li>Vídeo em Animação 2D</li>
+            </ul>
+            <button class="btn btn-primary">R$ 4.140,00</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h2 class="card-title">90 SEGUNDOS</h2>
+            <ul>
+              <li>Gerente de produção</li>
+              <li>Reuniões com gerente</li>
+              <li>Roteiro para vídeo Animado</li>
+              <li>Storyboard do vídeo</li>
+              <li>Trilha sonora com 100% de direitos de usar e comercializar </li>
+              <li>Vídeo em Animação 2D</li>
+            </ul>
+            <button class="btn btn-primary">R$ 5.520,00</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="forms-news" class="container-fluid">
+    <div class="row">
+      <div class="col-6">
+        <form>
+          <span>
+            Deseja receber novidades sobre o <b>mundo da animação</b> e <b>nossos projetos?</b>
+          </span>
+          <div class="mb-3">
+            <label for="first-name" class="form-label">Nome:</label>
+            <input type="text" class="form-control" id="first-name" aria-describedby="emailHelp" placeholder="Nome"
+              required>
+          </div>
+          <div class="mb-3">
+            <label for="second-name" class="form-label">Sobrenome</label>
+            <input type="text" class="form-control" id="second-name" placeholder="Sobrenome" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone-number" class="form-label">Telefone:</label>
+            <input type="tel" class="form-control" id="phone-number" placeholder="Telefone" required>
+          </div>
+          <button type="submit" class="btn btn-primary">DESEJO RECEBER NOVIDADES</button>
+        </form>
+      </div>
+      <div class="col-6 align-self-center">
+        <img src="images/dog.png" height="600px" width="250px" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <h2>Ultimas Avaliações</h2>
+    </div>
+    <div class="row d-flex justify-content-evenly">
+      <div class="col-1">
+        <figure class="user-icon">
+          <img src="images/mickey.png" alt="">
+        </figure>
+      </div>
+      <div class="col-3">
+        <div class="user-review">
+          <div class="user-comment">
+            <div class="review-text">
+              <h3>Mickey Mouse</h3>
+              <span><b>Avaliação:</b> Aqui é o Mickey Mouse, Eu simplesmente amei tudo sobre o serviço que recebi! Foi
+                incrível! Desde o início, todos foram muito gentis e prestativos, e isso me fez sentir como uma estrela!
+                O atendimento foi rápido e eficiente, e eu me senti muito bem cuidado durante toda a experiência.</span>
+            </div>
+            <div class="bottom-infos">
+              <div class="user-rate">
+                <img src="images/estrela-cheia.png" alt="">
+                <img src="images/estrela-cheia.png" alt="">
+                <img src="images/estrela-cheia.png" alt="">
+                <img src="images/estrela-cheia.png" alt="">
+                <img src="images/estrela-vazia.png" alt="">
+              </div>
+              <span class="date-review">02/05/2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <figure class="user-icon">
+          <img src="images/donald.png" alt="">
+        </figure>
+      </div>
+      <div class="col-3">
+        <div class="user-review">
+          <div class="user-comment">
+            <div class="review-text">
+              <h3>Pato Donald</h3>
+              <span><b>Avaliação:</b> Oiê, sou o Pato Donald e gostaria de compartilhar minha opinião sobre este serviço
+                excepcional! Primeiramente, gostaria de destacar a qualidade do atendimento ao cliente que
+                recebi.Recomendo fortemente a todos, Obrigado por tudo! Quack, quack!</span>
+            </div>
+            <div class="bottom-infos">
+              <div class="user-rate">
+                <img src="images/estrela-cheia.png" alt="">
+                <img src="images/estrela-cheia.png" alt="">
+                <img src="images/estrela-cheia.png" alt="">
+                <img src="images/estrela-cheia.png" alt="">
+                <img src="images/estrela-cheia.png" alt="">
+              </div>
+              <span class="date-review">04/05/2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <figure class="user-icon">
+          <img src="images/pateta.png">
+        </figure>
+      </div>
+      <div class="col-3">
+        <div class="user-review">
+          <div class="user-comment">
+            <div class="review-text">
+              <h3>Pateta</h3>
+              <span><b>Avaliação:</b> Aqui é o Pateta e eu gostaria de compartilhar a minha experiência incrível com
+                vocês! O serviço foi rápido e eficiente, e eu não tive que esperar muito tempo para receber o meu
+                produto final.E quando eu finalmente recebi, as animações eram incriveis! Era tudo o que eu esperava e
+                muito mais!
+              </span>
+            </div>
+            <div class="bottom-infos">
+              <div class="user-rate">
+                <img src="images/estrela-cheia.png" alt="">
+                <img src="images/estrela-cheia.png" alt="">
+                <img src="images/estrela-cheia.png" alt="">
+                <img src="images/estrela-vazia.png" alt="">
+                <img src="images/estrela-vazia.png" alt="">
+              </div>
+              <span class="date-review">28/04/2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-end"">
+      <button class="btn btn-primary">+ CARREGAR MAIS AVALIAÇÕES</button>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-7">
+        <h2>Novidades</h2>
+      </div>
+      <h2>Sobre</h2>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <img class="news-image" src="images/disney-news.jpg" alt="">
+      </div>
+      <div class="col-3">
+        <article class="news-text-box">
+          <h3>Saiu! Disney divulga Trailer de Elemental na CinemaCon 2023</h3>
+          <p>
+            A Disney subiu no palco da CinemaCon 2023 exibiu 20 minutos no início de Elemental da Pixar, o próximo filme
+            que procura explorar as diferenças percebidas entre os residentes de fogo, água, terra e ar de Element City
+            e
+            como todos eles têm muito mais em comum do que acreditam.
+          </p>
+          <div class="news-filters">
+            <span class="filter">DISNEY</span>
+            <span class="filter">CINEMACON</span>
+          </div>
+        </article>
+      </div>
+      <div class="col-5">
+        <p id="about-text">
+          Nós somos uma equipe de animação altamente apaixonada pelo que fazemos, dedicada a criar filmes animados
+          emocionantes e inovadores. Mesmo sendo novatos na área, nossa equipe inclui diretores criativos, roteiristas
+          talentosos, artistas habilidosos de storyboard e personagens, animadores experientes e especialistas em
+          efeitos visuais.
+          Nosso objetivo é trazer histórias cativantes à vida por meio da animação, criando um mundo animado totalmente
+          imersivo para nossos espectadores. Trabalhamos em estreita colaboração com nossos clientes, desde a concepção
+          do conceito até a entrega final do filme animado, garantindo que cada projeto seja único e atenda às
+          necessidades individuais do cliente.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-4">
+        <img class="news-image" src="images/dreamworks-news.png">
+      </div>
+      <div class="col-3">
+        <article class="news-text-box">
+          <h3>DreamWorks Experience: 25 Anos de Estúdio</h3>
+          <p>
+            A DreamWorks Animation: A Exposição celebra os mais de 25 anos do estúdio de animação. A experiência oferece
+            uma oportunidade única de conhecer os processos criativos por trás de algumas das produções mais queridas da
+            DreamWorks Animation, como Shrek, Madagáscar,etc.
+          </p>
+          <div class="news-filters">
+            <span class="filter">DREAMWORKS</span>
+            <span class="filter">ANIVERSÁRIO</span>
+            <span class="filter">EVENTO</span>
+          </div>
+        </article>
+      </div>
+      <div class="col-5">
+        <h2>Editorial</h2>
+        <p id="editor-text">
+        <div class="user-editor">
+          <img id="user-icon" src="images/user-icon.png" alt="">
+          <span>Front-end Developer: Caio Vinícius</span>
+        </div>
+        <div class="user-editor">
+          <img id="user-icon" src="images/user-icon.png" alt="">
+          <span>Front-end Developer: Matheus Nunes</span>
+        </div>
+        <div class="user-editor">
+          <img id="user-icon" src="images/user-icon.png" alt="">
+          <span>Professor: Fischer Jonatas</span>
+        </div>
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-4">
+        <img class="news-image" src="images/selos-disney-news.jpeg" alt="">
+      </div>
+      <div class="col-3">
+        <article class="news-text-box">
+          <h3>CinemaCon 2023: Disney Lança Filmes de Todos seus Selos</h3>
+          <p>
+            No quarto dia de CinemaCon, em Las Vegas, foi a vez de a Disney apresentar aos exibidores materiais inéditos
+            de seus próximos lançamentos, entre eles As Marvels, Wish, A pequena sereia, Mansão mal assombrada, A
+            haunting in Venice, Elementos e Indiana Jones e a relíquia do destino
+          </p>
+          <div class="news-filters">
+            <span class="filter">DISNEY</span>
+            <span class="filter">CINEMACON</span>
+            <span class="filter">PIXAR</span>
+            <span class="filter">FILMES</span>
+          </div>
+        </article>
+      </div>
+      <div class="col-5">
+        <h2>Redes Sociais:</h2>
+        <div class="social-icons">
+          <img id="facebook-icon" src="images/facebook-icon.png" alt="">
+          <img id="twitter-icon" src="images/twitter-icon.png" alt="">
+          <img id="instagram-icon" src="images/instagram-icon.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid ">
+    <div class="row">
+      <h2>Nossos Trabalhos</h2>
+    </div>
+    <div id="works-row" class="row">
+      <div class="col-4">
+        <img src="images/nier-automata-banner.jpeg" alt="">
+      </div>
+      <div class="col-4">
+        <div class="row">
+          <img src="images/kimetsu-banner.jpg" alt="">
+        </div>
+        <div class="row">
+          <img src="images/takt-banner.jpg" alt="">
+        </div>
+        <div class="row">
+          <img src="images/one-piece-banner.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-4">
+        <img src="images/mob-psycho-banner.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <h3>Suporte</h3>
+    </div>
+    <div class="row">
+      <span><b>Email:</b> animatrixstudios@faq.com</span>
+    </div>
+    <div class="row">
+      <span><b>Telefone:</b> (88) 998765432</span>
+    </div>
+    <div class="row justify-content-center">
+      <span id="devs">&#169; Developed by Caio Vinícius & Matheus Nunes</span>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
