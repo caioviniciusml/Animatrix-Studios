@@ -1,4 +1,13 @@
+:root{
+    --primary:#ff4d6d;
+}
+.bg-primary, .btn-primary{
+    background-color: var(--primary) !important;
+}
 body{
+    background-color: #fff0f3;
+    font-family: 'Raleway', sans-serif;
+    color: #ff4d6d;
     margin: 20px 40px;
 }
 #animatrix-logo{
@@ -22,6 +31,13 @@ body{
     height: 180px;
     width: 120px;
 }
+.card{
+    height: 50vh;
+}
+#forms-news .form-control{
+    background-color: #ffccd5;;
+}
+
 #forms-news img{
     height: auto;
     width: 80%;
@@ -41,7 +57,7 @@ body{
     width: 100%;
     height: 250px;
     min-width: 300px;
-    flex-grow: 1;
+    margin-left: auto;
 }
 #user-icon{
     width: 40px;
@@ -64,6 +80,26 @@ body{
 #works-row img:hover{
     transform: scale(1.2);
 }
-.col-4{
+#works-row .col-4, #works-row .col-sm-5, #works-row .col-8{
     overflow: hidden;
+}
+.review-text{
+    width: auto;
+}
+hr{
+    width: 98%;
+}
+.products-box{
+    color: white;
+    background-color: #ff758f;
+}
+.card-button{
+    background-color: #ff758f;
+}
+.movie-iframe button{
+    background-color: #590d22;
+}
+.footer{
+    background-color: #ff4d6d;
+    color: #fff0f3;
 }

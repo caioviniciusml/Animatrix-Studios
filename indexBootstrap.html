@@ -13,19 +13,19 @@
 
 <body>
   <div class="container-fluid">
-    <div class="row">
+    <div class="row justify-content-between">
       <div class="col-1">
         <figure class="logo">
           <img id="animatrix-logo" src="images/logo.png" alt="Animatrix Studios Logo">
         </figure>
       </div>
-      <div class="col-8">
+      <div class="col-12 col-md-8">
         <div id="company-info">
           <h1><img id="company-name" src="images/nome.png" alt="Animatrix Studios"></h1>
           <span id="company-description">Tornando sua vida mais animada</span>
         </div>
       </div>
-      <div class="col-3 align-self-end">
+      <div class="col-md-3 align-self-center ml-auto">
         <div id="languages">
           <a href="">PT</a>
           <span>|</span>
@@ -45,32 +45,35 @@
       </div>
     </div>
   </div>
-  <nav class="navbar rounded-pill navbar-expand-lg bg-body-tertiary bg-primary navbar-dark">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary navbar-dark rounded-pill ">
     <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">MANGAS DA SEMANA</a>
+            <a class="nav-link active" href="#">MANGAS DA SEMANA</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">PRODUTOS</a>
+            <a class="nav-link active">PRODUTOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">NOVIDADES</a>
+            <a class="nav-link active">NOVIDADES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">AVALIAÇÕES</a>
+            <a class="nav-link active">AVALIAÇÕES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">SOBRE</a>
+            <a class="nav-link active">SOBRE</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Search</button>
+          <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
         </form>
       </div>
     </div>
@@ -81,14 +84,14 @@
     </figure>
   </div>
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-3">
+    <div class="row d-flex justify-content-center ">
+      <div class="col-12 col-md-5 col-xl-3">
         <h2>Volume da Semana</h2>
         <div class="week-manga-content">
           <img src="images/one-piece-cap4.png" alt="">
         </div>
       </div>
-      <div class="col-5 align-self-center">
+      <div class="col-12 col-md-5 align-self-center">
         <div class="week-manga-description">
           <h3>One Piece Cap. 4</h3>
           <p>Uma visão do passado de Luffy é mostrado e somos apresentados a seu herói, o homem que lhe deu o chapéu
@@ -96,13 +99,13 @@
             cidade como o jovem Luffy é levado pelo líder dos bandidos e jogado na água, onde ele não pode nadar,
             devido à sua Akuma no Mi.
           </p>
-          <div class="week-manga-buttons ">
-            <button>LER MANGÁ</button>
-            <button>COMPRAR VOLUME</button>
+          <div class="week-manga-buttons">
+            <button class="btn btn-primary border-0 rounded-pill ml-5">LER MANGÁ</button>
+            <button class="btn btn-primary border-0 rounded-pill ml-3">COMPRAR VOLUME</button>
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-md-4 ">
         <div class="movie">
           <h2>Filmes</h2>
           <div class="movie-iframe">
@@ -110,14 +113,16 @@
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
-            <button>COMPARTILHAR</button>
+            <button class="border-0 text-white rounded-pill ">COMPARTILHAR</button>
           </div>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-2">
-        <h2>Mais Vistos da Semana</h2>
+      <h2>Mais Vistos da Semana</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-3 col-sm-4 col-xl-2">
         <figure class="manga-box">
           <img class="manga-image" src="images/solo-leveling-manga.jpg" alt="">
           <figcaption>
@@ -125,7 +130,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-2 align-self-end">
+      <div class="col-6 col-md-3 col-sm-4 col-xl-2">
         <figure class="manga-box">
           <img class="manga-image" src="images/kimetsu-manga.jpg" alt="">
           <figcaption>
@@ -133,7 +138,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-2 align-self-end">
+      <div class="col-6 col-md-3 col-sm-4 col-xl-2">
         <figure class="manga-box">
           <img class="manga-image" src="images/tokyo-revengers-manga.jpg" alt="">
           <figcaption>
@@ -141,7 +146,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-2 align-self-end">
+      <div class="col-6 col-md-3 col-sm-4 col-xl-2">
         <figure class="manga-box">
           <img class="manga-image" src="images/one-piece-manga.jpg" alt="">
           <figcaption>
@@ -149,7 +154,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-4">
+      <div class="col-sm-9 col-md-4 ">
         <nav id="works-nav" class="navigate">
           <h2>Trabalhos</h2>
           <ul>
@@ -164,7 +169,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-8">
+      <div class="col-sm-12 col-md-8">
         <div class="week-manga-user-reviews">
           <h3>Review dos Usuários</h3>
           <p>Os capítulos dessa última semana foram incríveis, mesmo alguns tendo atrasos consideráveis de publicação no
@@ -179,23 +184,25 @@
     </div>
   </div>
   <div class="container-fluid">
-    <div class="row d-flex justify-content-around">
-      <div class="col-3">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
+    <div class="row d-flex justify-content-around my-5">
+      <div class="col-8 col-md-6 col-xl-3 align-self-center">
+        <div class="card " style="width: 18rem; ">
+          <div class="products-box card-body ">
             <h2 class="card-title">30 SEGUNDOS</h2>
             <ul>
               <li>Roteiro para vídeo Animado</li>
               <li>Trilha sonora com 100% de direitos de usar e comercializar </li>
               <li>Vídeo em Animação 2D</li>
             </ul>
-            <button class="btn btn-primary">R$ 2.880,00</button>
+          </div>
+          <div class="text-center card-button ">
+            <button class="btn btn-primary border-0 mb-3 rounded-pill">R$ 2.880,00</button>
           </div>
         </div>
       </div>
-      <div class="col-3">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
+      <div class="col-8 col-md-6 col-xl-3 align-self-center">
+        <div class="card" style="width: 18rem; ">
+          <div class="products-box card-body">
             <h2 class="card-title">60 SEGUNDOS</h2>
             <ul>
               <li>Roteiro para vídeo Animado</li>
@@ -203,13 +210,15 @@
               <li>Trilha sonora com 100% de direitos de usar e comercializar </li>
               <li>Vídeo em Animação 2D</li>
             </ul>
-            <button class="btn btn-primary">R$ 4.140,00</button>
+          </div>
+          <div class="card-button text-center">
+            <button class="btn btn-primary border-0 mb-3 rounded-pill">R$ 4.140,00</button>
           </div>
         </div>
       </div>
-      <div class="col-3">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
+      <div class="col-8 col-md-6 col-xl-3 align-self-center">
+        <div class="card" style="width: 18rem; ">
+          <div class="products-box card-body">
             <h2 class="card-title">90 SEGUNDOS</h2>
             <ul>
               <li>Gerente de produção</li>
@@ -219,55 +228,59 @@
               <li>Trilha sonora com 100% de direitos de usar e comercializar </li>
               <li>Vídeo em Animação 2D</li>
             </ul>
-            <button class="btn btn-primary">R$ 5.520,00</button>
+          </div>
+          <div class="card-button text-center ">
+            <button class="btn btn-primary border-0 mb-3 rounded-pill">R$ 5.520,00</button>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div id="forms-news" class="container-fluid">
-    <div class="row">
-      <div class="col-6">
+    <div class="row my-5">
+      <div class="col-12 col-md-6">
         <form>
           <span>
             Deseja receber novidades sobre o <b>mundo da animação</b> e <b>nossos projetos?</b>
           </span>
           <div class="mb-3">
             <label for="first-name" class="form-label">Nome:</label>
-            <input type="text" class="form-control" id="first-name" aria-describedby="emailHelp" placeholder="Nome"
+            <input type="text" class="form-control rounded-pill" id="first-name" aria-describedby="emailHelp" placeholder="Nome"
               required>
           </div>
           <div class="mb-3">
             <label for="second-name" class="form-label">Sobrenome</label>
-            <input type="text" class="form-control" id="second-name" placeholder="Sobrenome" required>
+            <input type="text" class="form-control rounded-pill" id="second-name" placeholder="Sobrenome" required>
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required>
+            <input type="email" class="form-control rounded-pill" id="email" placeholder="seuemail@exemplo.com" required>
           </div>
           <div class="mb-3">
             <label for="phone-number" class="form-label">Telefone:</label>
-            <input type="tel" class="form-control" id="phone-number" placeholder="Telefone" required>
+            <input type="tel" class="form-control rounded-pill" id="phone-number" placeholder="Telefone" required>
           </div>
-          <button type="submit" class="btn btn-primary">DESEJO RECEBER NOVIDADES</button>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary border-0 rounded-pill">DESEJO RECEBER NOVIDADES</button>
+          </div>
         </form>
       </div>
-      <div class="col-6 align-self-center">
-        <img src="images/dog.png" height="600px" width="250px" alt="">
+      <div class="col-12 col-md-6 align-self-center">
+        <img class="d-none d-sm-none d-md-block" src="images/dog.png" height="600px" width="250px" alt="">
       </div>
     </div>
   </div>
   <div class="container-fluid">
-    <div class="row">
+    <div class="row my-5">
       <h2>Ultimas Avaliações</h2>
     </div>
-    <div class="row d-flex justify-content-evenly">
-      <div class="col-1">
+    <div class="row">
+      <div class="col-1 col-sm-2 col-md-1">
         <figure class="user-icon">
           <img src="images/mickey.png" alt="">
         </figure>
       </div>
-      <div class="col-3">
+      <div class="col-sm-10 col-md-5 col-xl-3 col-lg-5">
         <div class="user-review">
           <div class="user-comment">
             <div class="review-text">
@@ -289,12 +302,12 @@
           </div>
         </div>
       </div>
-      <div class="col-1">
+      <div class="col-1 col-sm-2 col-md-1">
         <figure class="user-icon">
           <img src="images/donald.png" alt="">
         </figure>
       </div>
-      <div class="col-3">
+      <div class="col-sm-10 col-md-5 col-xl-3 col-lg-5">
         <div class="user-review">
           <div class="user-comment">
             <div class="review-text">
@@ -316,12 +329,12 @@
           </div>
         </div>
       </div>
-      <div class="col-1">
+      <div class="col-1 col-sm-2 col-md-1">
         <figure class="user-icon">
           <img src="images/pateta.png">
         </figure>
       </div>
-      <div class="col-3">
+      <div class="col-sm-10 col-md-11 col-xl-3 col-lg-11">
         <div class="user-review">
           <div class="user-comment">
             <div class="review-text">
@@ -346,27 +359,22 @@
         </div>
       </div>
     </div>
-    <div class="row justify-content-end"">
-      <button class="btn btn-primary">+ CARREGAR MAIS AVALIAÇÕES</button>
+    <div class="row justify-content-end mt-5">
+      <button class=" btn btn-primary border-0 rounded-pill">+ CARREGAR MAIS AVALIAÇÕES</button>
     </div>
   </div>
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-7">
+    <div class="row justify-content-center my-5">
+      <div class="col-sm-10 col-lg-7 col-md-8">
         <h2>Novidades</h2>
-      </div>
-      <h2>Sobre</h2>
-    </div>
-    <div class="row">
-      <div class="col-4">
         <img class="news-image" src="images/disney-news.jpg" alt="">
-      </div>
-      <div class="col-3">
         <article class="news-text-box">
           <h3>Saiu! Disney divulga Trailer de Elemental na CinemaCon 2023</h3>
           <p>
-            A Disney subiu no palco da CinemaCon 2023 exibiu 20 minutos no início de Elemental da Pixar, o próximo filme
-            que procura explorar as diferenças percebidas entre os residentes de fogo, água, terra e ar de Element City
+            A Disney subiu no palco da CinemaCon 2023 exibiu 20 minutos no início de Elemental da Pixar, o próximo
+            filme
+            que procura explorar as diferenças percebidas entre os residentes de fogo, água, terra e ar de Element
+            City
             e
             como todos eles têm muito mais em comum do que acreditam.
           </p>
@@ -375,26 +383,8 @@
             <span class="filter">CINEMACON</span>
           </div>
         </article>
-      </div>
-      <div class="col-5">
-        <p id="about-text">
-          Nós somos uma equipe de animação altamente apaixonada pelo que fazemos, dedicada a criar filmes animados
-          emocionantes e inovadores. Mesmo sendo novatos na área, nossa equipe inclui diretores criativos, roteiristas
-          talentosos, artistas habilidosos de storyboard e personagens, animadores experientes e especialistas em
-          efeitos visuais.
-          Nosso objetivo é trazer histórias cativantes à vida por meio da animação, criando um mundo animado totalmente
-          imersivo para nossos espectadores. Trabalhamos em estreita colaboração com nossos clientes, desde a concepção
-          do conceito até a entrega final do filme animado, garantindo que cada projeto seja único e atenda às
-          necessidades individuais do cliente.
-        </p>
-      </div>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col-4">
+        <hr>
         <img class="news-image" src="images/dreamworks-news.png">
-      </div>
-      <div class="col-3">
         <article class="news-text-box">
           <h3>DreamWorks Experience: 25 Anos de Estúdio</h3>
           <p>
@@ -408,31 +398,8 @@
             <span class="filter">EVENTO</span>
           </div>
         </article>
-      </div>
-      <div class="col-5">
-        <h2>Editorial</h2>
-        <p id="editor-text">
-        <div class="user-editor">
-          <img id="user-icon" src="images/user-icon.png" alt="">
-          <span>Front-end Developer: Caio Vinícius</span>
-        </div>
-        <div class="user-editor">
-          <img id="user-icon" src="images/user-icon.png" alt="">
-          <span>Front-end Developer: Matheus Nunes</span>
-        </div>
-        <div class="user-editor">
-          <img id="user-icon" src="images/user-icon.png" alt="">
-          <span>Professor: Fischer Jonatas</span>
-        </div>
-        </p>
-      </div>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col-4">
+        <hr>
         <img class="news-image" src="images/selos-disney-news.jpeg" alt="">
-      </div>
-      <div class="col-3">
         <article class="news-text-box">
           <h3>CinemaCon 2023: Disney Lança Filmes de Todos seus Selos</h3>
           <p>
@@ -448,7 +415,33 @@
           </div>
         </article>
       </div>
-      <div class="col-5">
+      <div class="col-sm-10 col-lg-5  col-md-8">
+        <h2>Sobre</h2>
+        <p id="about-text">
+          Nós somos uma equipe de animação altamente apaixonada pelo que fazemos, dedicada a criar filmes animados
+          emocionantes e inovadores. Mesmo sendo novatos na área, nossa equipe inclui diretores criativos, roteiristas
+          talentosos, artistas habilidosos de storyboard e personagens, animadores experientes e especialistas em
+          efeitos visuais.
+          Nosso objetivo é trazer histórias cativantes à vida por meio da animação, criando um mundo animado totalmente
+          imersivo para nossos espectadores. Trabalhamos em estreita colaboração com nossos clientes, desde a concepção
+          do conceito até a entrega final do filme animado, garantindo que cada projeto seja único e atenda às
+          necessidades individuais do cliente.
+        </p>
+        <h2>Editorial</h2>
+        <p id="editor-text">
+        <div class="user-editor my-3">
+          <img id="user-icon" src="images/user-icon.png" alt="">
+          <span>Front-end Developer: Caio Vinícius</span>
+        </div>
+        <div class="user-editor my-3">
+          <img id="user-icon" src="images/user-icon.png" alt="">
+          <span>Front-end Developer: Matheus Nunes</span>
+        </div>
+        <div class="user-editor my-3">
+          <img id="user-icon" src="images/user-icon.png" alt="">
+          <span>Professor: Fischer Jonatas</span>
+        </div>
+        </p>
         <h2>Redes Sociais:</h2>
         <div class="social-icons">
           <img id="facebook-icon" src="images/facebook-icon.png" alt="">
@@ -459,14 +452,14 @@
     </div>
   </div>
   <div class="container-fluid ">
-    <div class="row">
+    <div class="row my-3">
       <h2>Nossos Trabalhos</h2>
     </div>
-    <div id="works-row" class="row">
-      <div class="col-4">
+    <div id="works-row" class="row justify-content-center mb-5">
+      <div class="col-8 col-sm-8 col-md-8 col-lg-5 col-xl-4 ">
         <img src="images/nier-automata-banner.jpeg" alt="">
       </div>
-      <div class="col-4">
+      <div class="col-8 col-sm-8 col-md-8 col-lg-5 col-xl-4">
         <div class="row">
           <img src="images/kimetsu-banner.jpg" alt="">
         </div>
@@ -477,19 +470,19 @@
           <img src="images/one-piece-banner.jpg" alt="">
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-8 col-sm-8 col-md-8 col-lg-4">
         <img src="images/mob-psycho-banner.jpg" alt="">
       </div>
     </div>
   </div>
-  <div class="container-fluid">
-    <div class="row">
+  <div class="container-fluid footer">
+    <div class="row ml-2">
       <h3>Suporte</h3>
     </div>
-    <div class="row">
+    <div class="row ml-2">
       <span><b>Email:</b> animatrixstudios@faq.com</span>
     </div>
-    <div class="row">
+    <div class="row ml-2">
       <span><b>Telefone:</b> (88) 998765432</span>
     </div>
     <div class="row justify-content-center">
