@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>ANIMATRIX COM MATERIALIZE</title>
+    <style>
+        body {
+            background-color: #fff0f3;
+            font-family: 'Raleway', sans-serif;
+            color: #ff4d6d;
+            margin: 20px 40px;
+        }
+
+        .card {
+            height: 350px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            color: #fff0f3;
+            background-color: #ff758f;
+            border-radius: 45px;
+        }
+
+        .products-box button {
+            align-self: center;
+            margin-top: auto;
+            width: 90%;
+            padding: 10px 20px;
+            border: none;
+            background-color: #ff4d6d;
+            color: #fff0f3;
+            border-radius: 25px;
+            font-size: 24px;
+            font-weight: 700
+        }
+
+        #submit-form-button {
+            margin: 20px 0;
+            padding: 15px 25px;
+            border-radius: 25px;
+            background-color: #ff4d6d;
+            color: #fff0f3;
+            border: none;
+            font-weight: bold;
+            align-self: center;
+        }
+
+        form span {
+            color: #ff758f;
+            font-size: 40px;
+        }
+
+        .user-icon img {
+            border: 3px solid #a4133c;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+        }
+
+        .user-rate img {
+            height: 25px;
+            width: auto;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .last-reviews button {
+            margin: 0 20px;
+            padding: 15px 25px;
+            border-radius: 25px;
+            border: none;
+            background-color: #ff4d6d;
+            color: #fff0f3;
+            font-weight: 700;
+            text-align: center;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row ">
+        <div class="col s8 m6 l6 xl4  center">
+            <div class="card z-depth-5">
+                <div class="products-box card-content ">
+                    <h2 class="card-title">30 SEGUNDOS</h2>
+                    <ul>
+                        <li>Roteiro para vídeo Animado</li>
+                        <li>Trilha sonora com 100% de direitos de usar e comercializar </li>
+                        <li>Vídeo em Animação 2D</li>
+                    </ul>
+                    <div class="text-center card-button ">
+                        <button class="">R$ 2.880,00</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s8 m6 xl4 center">
+            <div class="card z-depth-5">
+                <div class="products-box card-content">
+                    <h2 class="card-title">60 SEGUNDOS</h2>
+                    <ul>
+                        <li>Roteiro para vídeo Animado</li>
+                        <li>Storyboard do vídeo</li>
+                        <li>Trilha sonora com 100% de direitos de usar e comercializar </li>
+                        <li>Vídeo em Animação 2D</li>
+                    </ul>
+                    <div class="">
+                        <button class="">R$ 4.140,00</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s8 m6 xl4 center">
+            <div class="card z-depth-5">
+                <div class="products-box card-content">
+                    <h2 class="card-title">90 SEGUNDOS</h2>
+                    <ul>
+                        <li>Gerente de produção</li>
+                        <li>Reuniões com gerente</li>
+                        <li>Roteiro para vídeo Animado</li>
+                        <li>Storyboard do vídeo</li>
+                        <li>Trilha sonora com 100% de direitos de usar e comercializar </li>
+                        <li>Vídeo em Animação 2D</li>
+                    </ul>
+                    <div class="">
+                        <button class=" ">R$ 5.520,00</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m12 l6">
+            <form action="" class="col s12">
+                <span>
+                    Deseja receber novidades sobre o <b>mundo da animação</b> e <b>nossos projetos?</b>
+                </span>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="first-name" type="text" class="validate" placeholder="Nome" required>
+                        <label for="first-name">Nome:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="second-name" type="text" class="validate" placeholder="Sobrenome" required>
+                        <label for="second-name">Sobrenome</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate" placeholder="seuemail@exemplo.com" required>
+                        <label for="email">Email:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="phone-number" type="tel" class="validate" placeholder="Telefone" required>
+                        <label for="phone-number">Telefone:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <button id="submit-form-button" type="submit" class="">DESEJO RECEBER NOVIDADES</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="col s12 m6"></div>
+        <img class="hide-on-med-and-down " src="images/dog.png" height="600px" width="500px" alt="">
+    </div>
+    <div class="last-reviews">
+        <div class="row">
+            <h2>Ultimas Avaliações</h2>
+        </div>
+        <div class="row">
+            <div class="col s1 m2 xl1 center">
+                <figure class="user-icon">
+                    <img class="circle " src="images/mickey.png" alt="">
+                </figure>
+            </div>
+            <div class="col s11 m4 xl3 center">
+                <div class="user-review">
+                    <div class="user-comment">
+                        <div class="review-text">
+                            <h3>Mickey Mouse</h3>
+                            <span><b>Avaliação:</b> Aqui é o Mickey Mouse, Eu simplesmente amei tudo sobre o serviço
+                                que recebi! Foi
+                                incrível! Desde o início, todos foram muito gentis e prestativos, e isso me fez
+                                sentir como uma estrela!
+                                O atendimento foi rápido e eficiente, e eu me senti muito bem cuidado durante toda a
+                                experiência.</span>
+                        </div>
+                        <div class="bottom-infos">
+                            <div class="user-rate">
+                                <img src="images/estrela-cheia.png" alt="">
+                                <img src="images/estrela-cheia.png" alt="">
+                                <img src="images/estrela-cheia.png" alt="">
+                                <img src="images/estrela-cheia.png" alt="">
+                                <img src="images/estrela-vazia.png" alt="">
+                            </div>
+                            <span class="date-review">02/05/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s1 m2 xl1 center">
+                <figure class="user-icon">
+                    <img src="images/donald.png" alt="">
+                </figure>
+            </div>
+            <div class="col s11 m4 xl3 center">
+                <div class="user-review">
+                    <div class="user-comment">
+                        <div class="review-text">
+                            <h3>Pato Donald</h3>
+                            <span><b>Avaliação:</b> Oiê, sou o Pato Donald e gostaria de compartilhar minha opinião
+                                sobre
+                                este
+                                serviço
+                                excepcional! Primeiramente, gostaria de destacar a qualidade do atendimento ao cliente
+                                que
+                                recebi.Recomendo fortemente a todos, Obrigado por tudo! Quack, quack!</span>
+                        </div>
+                        <div class="bottom-infos">
+                            <div class="user-rate">
+                                <img src="images/estrela-cheia.png" alt="">
+                                <img src="images/estrela-cheia.png" alt="">
+                                <img src="images/estrela-cheia.png" alt="">
+                                <img src="images/estrela-cheia.png" alt="">
+                                <img src="images/estrela-cheia.png" alt="">
+                            </div>
+                            <span class="date-review">04/05/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s1 m2 xl1 center">
+                <figure class="user-icon">
+                    <img src="images/pateta.png">
+                </figure>
+            </div>
+            <div class="col s11 m4 xl3 center">
+                <div class="user-review">
+                    <div class="user-comment">
+                        <div class="review-text">
+                            <h3>Pateta</h3>
+                            <span><b>Avaliação:</b> Aqui é o Pateta e eu gostaria de compartilhar a minha experiência
+                                incrível
+                                com
+                                vocês! O serviço foi rápido e eficiente, e eu não tive que esperar muito tempo para
+                                receber
+                                o
+                                meu
+                                produto final.E quando eu finalmente recebi, as animações eram incriveis! Era tudo o que
+                                eu
+                                esperava e
+                                muito mais!
+                            </span>
+                        </div>
+                        <div class="bottom-infos">
+                            <div class="user-rate">
+                                <img src="images/estrela-cheia.png" alt="">
+                                <img src="images/estrela-cheia.png" alt="">
+                                <img src="images/estrela-cheia.png" alt="">
+                                <img src="images/estrela-vazia.png" alt="">
+                                <img src="images/estrela-vazia.png" alt="">
+                            </div>
+                            <span class="date-review">28/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <button class=" right">+ CARREGAR MAIS AVALIAÇÕES</button>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
