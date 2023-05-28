@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#fff0f3',
+                        secondary: '#ff4d6d',
+                        tertiary: '#a4133c',
+                        aside: '#ffccd5',
+                        iframeButton: '#590d22',
+                    },
+                    fontFamily: {
+                        body: ['Raleway', 'sans-serif'],
+                    },
+                    spacing: {
+                        '5px': '5px',
+                        '10px': '10px',
+                        '15px': '15px',
+                        '16px': '16px',
+                        '20px': '20px',
+                        '30px': '30px',
+                        '40px': '40px',
+                    },
+                    height: {
+                        logo: '100px',
+                        companyName: '60px',
+                        '300px': '300px',
+                    },
+                    minWidth: {
+                        '280px': '280px',
+                    },
+                    width: {
+                        '45%': '45%',
+                    },
+                    boxShadow: {
+                        buttons: '2px 2px 10px #5c5c5c',
+                    }
+                }
+            }
+        }
+    </script>
+      <title>ANIMATRIX COM TAILWIND</title>
+</head>
+
+<body class="bg-primary font-body text-secondary mx-40px my-20px">
+    <header class="flex flex-row justify-start items-evenly flex-wrap">
+        <figure class="logo flex justify-between my-16px mx-40px">
+            <img id="animatrix-logo" class="h-logo" src="images/logo.png" alt="Animatrix Studios Logo">
+            <div id="company-info" class="flex flex-col mx-20px justify-evenly">
+                <h1 class="text-[40px]"><img id="company-name" class="h-companyName" src="images/nome.png"
+                        alt="Animatrix Studios"></h1>
+                <span id="company-description" class="tracking-widest font-bold">Tornando sua vida mais animada</span>
+            </div>
+        </figure>
+        <div id="header-options" class="options ml-auto flex flex-col justify-around items-end">
+            <div id="languages">
+                <a href="">PT</a>
+                <span class="font-semibold text-tertiary">|</span>
+                <a href="">EN</a>
+                <span class="font-semibold text-tertiary">|</span>
+                <a href="">DE</a>
+                <span class="font-semibold text-tertiary">|</span>
+                <a href="">FR</a>
+            </div>
+            <div id="opt">
+                <a href="#works">Nossos Trabalhos</a>
+                <span class="font-semibold text-tertiary">|</span>
+                <a href="#forms-news">Formulário</a>
+                <span class="font-semibold text-tertiary">|</span>
+                <a href="#footer">Suporte</a>
+            </div>
+        </div>
+    </header>
+    <nav id="main-nav-bar"
+        class="p-5px flex flex-row justify-around items-center flex-wrap h-14 bg-secondary rounded-full text-primary  max-[920px]:bg-inherit ">
+        <a href=""
+            class="max-[920px]: bg-secondary max-[920px]:rounded-full max-[920px]:w-full max-[920px]:text-center max-[920px]:my-5px max-[920px]:p-5px max-[920px]:font-black">HOME</a>
+        <a href="#week-manga-headline"
+            class="max-[920px]: bg-secondary max-[920px]:rounded-full max-[920px]:w-full max-[920px]:text-center max-[920px]:my-5px max-[920px]:p-5px max-[920px]:font-black">MANGAS
+            DA SEMANA</a>
+        <a href="#products"
+            class="max-[920px]: bg-secondary max-[920px]:rounded-full max-[920px]:w-full max-[920px]:text-center max-[920px]:my-5px max-[920px]:p-5px max-[920px]:font-black">PRODUTOS</a>
+        <a href="#news"
+            class="max-[920px]: bg-secondary max-[920px]:rounded-full max-[920px]:w-full max-[920px]:text-center max-[920px]:my-5px max-[920px]:p-5px max-[920px]:font-black">NOVIDADES</a>
+        <a href="#last-reviews"
+            class="max-[920px]: bg-secondary max-[920px]:rounded-full max-[920px]:w-full max-[920px]:text-center max-[920px]:my-5px max-[920px]:p-5px max-[920px]:font-black">AVALIAÇÕES</a>
+        <a href="#about"
+            class="max-[920px]: bg-secondary max-[920px]:rounded-full max-[920px]:w-full max-[920px]:text-center max-[920px]:my-5px max-[920px]:p-5px max-[920px]:font-black">SOBRE</a>
+        <input id="search-bar"
+            class="py-5px px-15px rounded-full h-7 w-1/5 border-none max-[920px]:my-5px max-[920px]:w-full max-[920px]:bg-aside max-[920px]:font-bold"
+            type="search" name="search-bar" placeholder="Search">
+    </nav>
+    <figure id="home-content" class="flex justify-center m-0">
+        <img id="home-image" src="images/jovens.png" alt="Home Image">
+    </figure>
+    <div class="container flex flex-row justify-between flex-wrap">
+        <section id="main-content" class="mx-40px w-3/5 grow">
+            <div id="week-manga-headline" class="flex flex-col mb-30px">
+                <h2 class="mb-20px text-[40px] font-bold">Volume da Semana</h2>
+                <div class="week-manga-content flex flex-row justify-center items-center flex-wrap">
+                    <img class="h-300px min-w-280px mx-20px" src="images/one-piece-cap4.png" alt="">
+                    <div class="week-manga-description w-45% grow">
+                        <h3 class="text-[24px] font-bold">One Piece Cap. 4</h3>
+                        <p class="m-0">Uma visão do passado de Luffy é mostrado e somos apresentados a seu herói, o
+                            homem que lhe deu o chapéu de palha, Shanks. Shanks e sua tripulação se recusa a brigar com
+                            um grupo de bandidos que estavam na cidade como o jovem Luffy é levado pelo líder dos
+                            bandidos e jogado na água, onde ele não pode nadar, devido à sua Akuma no Mi.
+                        </p>
+                        <div class="week-manga-buttons my-20px flex flex-row justify-center items-center">
+                            <button
+                                class="mx-10px py-10px px-20px border-none bg-secondary text-primary rounded-full text-base font-bold hover:shadow-buttons">LER
+                                MANGÁ</button>
+                            <button
+                                class="mx-10px py-10px px-20px border-none bg-secondary text-primary rounded-full text-base font-bold hover:shadow-buttons">COMPRAR
+                                VOLUME</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="week-most-manga">
+                <h2 class="text-[40px] font-bold">Mais Vistos da Semana</h2>
+                <div class="manga-images w-full overflow-hidden flex flex-row flex-wrap justify-around">
+                    <figure
+                        class="manga-box my-10px flex flex-col justify-center items-center h-full w-1/5 min-w-[140px]">
+                        <img class="manga-image h-[180px] w-[120px]" src="images/solo-leveling-manga.jpg" alt="">
+                        <figcaption class="mt-10px text-center">
+                            Solo Leveling by Chu-Gong
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="manga-box my-10px flex flex-col justify-center items-center h-full w-1/5 min-w-[140px]">
+                        <img class="manga-image h-[180px] w-[120px]" src="images/kimetsu-manga.jpg" alt="">
+                        <figcaption class="mt-10px text-center">
+                            Kimetsu no Yaiba by Koyoharu Gotōge
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="manga-box my-10px flex flex-col justify-center items-center h-full w-1/5 min-w-[140px]">
+                        <img class="manga-image h-[180px] w-[120px]" src="images/tokyo-revengers-manga.jpg" alt="">
+                        <figcaption class="mt-10px text-center">
+                            Tokyo Revengers by Ken Wakui
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="manga-box my-10px flex flex-col justify-center items-center h-full w-1/5 min-w-[140px]">
+                        <img class="manga-image h-[180px] w-[120px]" src="images/one-piece-manga.jpg" alt="">
+                        <figcaption class="mt-10px text-center">
+                            One Piece by Eiichiro Oda
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="week-manga-user-reviews m-0">
+                    <h3 class="text-[24px] font-bold">Review dos Usuários</h3>
+                    <p>Os capítulos dessa última semana foram incríveis, mesmo alguns tendo atrasos consideráveis de
+                        publicação no final valeram a pena.Solo leveling estava num arco bem chato, mas nesse último
+                        capítulo a luta entre o Sung Jin-Woo e o Levi foi bem intensa e muito bem animada. Kimetsu vem
+                        desenvolvendo bem os personagens nos últimos volumes, já por outro lado Tokyo Revengers
+                        continuam bem frenético desde o começo, sempre tendo lutas e embates entre as gangues. One
+                        Piece, como sempre muito bem animado fico feliz do desenvolvimento do anime.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <aside class="grow bg-aside">
+            <div class="movie">
+                <h2 class="px-20px font-bold text-[40px] bg-tertiary text-primary">Filmes</h2>
+                <div class="movie-iframe mx-20px flex flex-col justify-center items-center">
+                    <iframe width="300" height="220" src="https://www.youtube.com/embed/JvqcaQJgr-A"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <button
+                        class="mx-10px my-20px py-10px px-20px border-none bg-iframeButton text-primary rounded-full text-base font-bold hover:shadow-buttons">COMPARTILHAR</button>
+                </div>
+            </div>
+            <nav id="works-nav" class="navigate flex flex-col">
+                <h2 class="px-20px font-bold text-[40px] bg-tertiary text-primary">Trabalhos</h2>
+                <ul class="m-0 mb-[80px]">
+                    <li class="my-5px text-[20px]">ICONES</li>
+                    <li class="my-5px text-[20px]">PERSONAGENS</li>
+                    <li class="my-5px text-[20px]">GIF</li>
+                    <li class="my-5px text-[20px]">CURTA ANIMADO</li>
+                    <li class="my-5px text-[20px]">CURTA METRAGENS</li>
+                    <li class="my-5px text-[20px]">FILMES</li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+</body>
+
+</html>
